@@ -1,0 +1,121 @@
+.bg-penso {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+}
+
+.container-all {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5rem;
+    padding: 0 4%;
+    margin-top: 86px;
+    height: calc(100vh - 86px);
+    align-items: center;
+}
+
+.container-all_left {
+    width: 50%;
+}
+
+.container-all_right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#togglePass {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button-show-pass {
+    background-image: url(../../../../public/assets/images/show.png);
+}
+
+.button-hide-pass {
+    background-image: url(../../../../public/assets/images/hide.png);
+}
+
+.container-right_form,
+h2 {
+    max-width: 620px;
+}
+
+.show-whitelabel {
+    display: none;
+}
+
+@media screen and (max-width:1587px) {
+    .container-all {
+        padding: 0px !important;
+        gap: 1rem;
+    }
+
+    .container-all_right {
+        width: 30%;
+        position: absolute;
+        right: 5rem;
+    }
+
+    .container-all_left {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width:1214px) {
+    .container-all_left {
+        width: 70%;
+    }
+
+    .container-all_right {
+        width: 35%;
+        position: absolute;
+        right: 5rem;
+    }
+
+    .container {
+        max-width: 580px !important;
+    }
+
+    .section-carousel {
+        padding-left: 1rem !important;
+    }
+}
+
+@media screen and (max-width:892px) {
+    .container-all_right {
+        width: 100% !important;
+        position: unset;
+        background: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-all_left {
+        display: none;
+    }
+}
+
+@media screen and (max-width:693px) {
+    .container-all_right {
+        width: 80% !important;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .container-all_right {
+        margin-top: 6rem;
+    }
+}

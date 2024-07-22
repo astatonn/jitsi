@@ -1,0 +1,47 @@
+.video-penso {
+    height: 425px;
+}
+
+.slider-container {
+    width: fit-content !important;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider-item {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem 0 3rem;
+}
+
+.slider-item p {
+    max-width: 100%;
+}
+
+.slider-item img {
+    width: 89% !important;
+}
+
+.section-carousel {
+    padding: 3rem 6rem;
+}
+
+.slider-navigation-next {
+    box-shadow: 0 0 12px -4px !important;
+    right: 10px !important;
+}
+
+.slider-navigation-previous {
+    box-shadow: 0 0 12px -4px !important;
+    left: 10px !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider-item {
+        width: 500px !important; 
+    }
+}
