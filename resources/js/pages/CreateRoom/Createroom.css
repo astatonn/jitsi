@@ -1,8 +1,4 @@
 .clock-react {
-    display: block;
-    position: absolute;
-    right: 100px;
-    top: 2.5rem;
     font-size: 24px;
     font-weight: 600;
     z-index: 13;

@@ -1,11 +1,16 @@
 .header {
     padding: 2rem 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: white;
+  z-index: 10;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-img {
+    height: 8rem;
 }
 
 @media screen and (max-width:640px) {

@@ -10,6 +10,14 @@
     overflow: hidden;
 }
 
+.carousel {
+    color: #fff !important;
+}
+
+.slider-navigation-previous, .slider-navigation-next{
+    display: none !important;
+}
+
 .slider-item {
     width: 600px;
     display: flex;

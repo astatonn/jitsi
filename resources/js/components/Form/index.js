@@ -3,7 +3,8 @@ import { captureData } from '../../helpersfunctions/helpersFunctions'
 import InputComponent from '../InputComponent';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import './Form.css';
 import { store, USER_LOGGED } from '../../store/store';
 
 export default function Form() {
@@ -82,7 +83,7 @@ export default function Form() {
 
     return (
         <div className='p-4 has-background-white'>
-            <h2 className='is-size-4'>Conecte-se com pessoas sempre que quiser, pelo tempo que precisar<span className="hidden-whitelabel">, com <span className='has-text-weight-bold'>Penso</span> <span className='has-text-link'>Meet</span></span><span className="show-whitelabel">, com o <span className='meet-white-label' style={{fontWeight: 500}}>Meet</span></span>.</h2>
+            <h2 className='is-size-4'>Realize conferências online e aproveite a tecnologia para fortalecer a colaboração e a tomada de decisões estratégicas<span className="hidden-whitelabel"> com <span className='has-text-weight-bold'>EBMail</span> <span style={{color: '#6a7d00'}}>Meet</span></span></h2>
             <form className='container-right_form pt-5'>
                 <ToastContainer />
 
@@ -91,8 +92,8 @@ export default function Form() {
 
 
                 <div className="buttons pt-5">
-                    <button className="button is-link" onClick={(e) => postEnter(e)}>Entrar</button>
-                    <button className="button is-success" onClick={(e) => postVis(e)}>Continuar como visitante</button>
+                    <button className="button is-link button-color-primary" onClick={(e) => postEnter(e)}>Entrar</button>
+                    <button className="button is-success button-color-secondary" onClick={(e) => postVis(e)}>Continuar como visitante</button>
                 </div>
             </form>
         </div>

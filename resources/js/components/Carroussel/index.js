@@ -38,11 +38,11 @@ export default function Carroussel() {
         bulmaCarousel.attach(".carousel", {
             slidesToScroll: 1,
             slidesToShow: 1,
-            autoplay: false,
+            autoplay: true,
             pagination: false,
-            loop: false,
+            loop: true,
             pauseOnHover: true,
-            wrapperWidth: 1000
+            wrapperWidth: 1000,
         });
 
     }, [])
@@ -51,39 +51,37 @@ export default function Carroussel() {
             <div className="container has-text-centered ">
                 <div className="carousel" >
                     <div className="item-1">
-                        <img src={isWhiteLabel ? callPensoWhiteLabel : callPenso} alt="" />
                         <p>Interaja com os participantes utilizando o chat e o sistema de votação</p>
                     </div>
 
 
                     <div className="item-2">
-                        <img src={isWhiteLabel ? videoPensoWhiteLabel : videoPenso} alt="" className='video-penso' />
                         <p>Compartilhe tela, transmita vídeos e áudios para todos os participantes</p>
                     </div>
 
 
                     <div className="item-3">
-                        <img src={isWhiteLabel ? breakPensoWhiteLabel : breakPenso} alt="" className='video-penso' />
+  
                         <p>Crie breakout rooms durante sua reunião</p>
                     </div>
 
                     <div className="item-4" >
-                        <img src={isWhiteLabel ? timePensoWhiteLabel : timePenso} alt="" className='video-penso' />
+               
                         <p>Reuniões sem limite de tempo</p>
                     </div>
 
                     <div className="item-5">
-                        <img src={isWhiteLabel ? meetPensoWhiteLabel : meetPenso} alt="" />
+    
                         <p>Faça videochamadas instantâneas ou programadas do seu navegador, sem instalar aplicativos</p>
                     </div>
 
                     <div className="item-6">
-                        <img src={isWhiteLabel ? safePensoWhiteLabel : safePenso} alt="" />
+
                         <p>Todas as reuniões são criptografadas, o que torna a plataforma mais segura</p>
                     </div>
 
                     <div className="item-7">
-                        <img src={isWhiteLabel ? gravePensoWhiteLabel : gravePenso} alt="" />
+                        
                         <p>Grave suas reuniões e salve onde quiser</p>
                     </div>
 

@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import Header from '../../components/Header'
 import bgPenso from "../../../../public/assets/images/logobg-penso.png"
 import Carroussel from '../../components/Carroussel'
+import bgEBMail from '../../../../public/assets/images/background.jpg'
 import Form from '../../components/Form'
 import AnimatedPage from "../../components/AnimatedPage/AnimatedPage"
 import { store } from "../../store/store"
@@ -26,15 +27,20 @@ export default function Login() {
   return (
     <AnimatedPage>
       {showRoute && <>
+      <div className="login-form-page">
+        <div className="main-left">
+        
         <Header />
-        <img src={bgPenso} className="bg-penso hidden-whitelabel" alt="background Penso" />
         <div className='container-all'>
-          <div className='container-all_left'>
-            <Carroussel />
-          </div>
           <div className='container-all_right'>
             <Form />
           </div>
+        </div></div>
+        <div className="main-right">
+            <Carroussel />
+        </div>
+       
+        
         </div>
       </>}
     </AnimatedPage>

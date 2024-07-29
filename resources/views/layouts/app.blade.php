@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
     @if(\App\Domain::checkWhiteLabelUrl())
-         Meet 
+      EBMail Meet 
         @else
-            Penso Meet
+            EBMail Meet
         @endif
     </title>
     <script>window.Laravel = {csrfToken: '{{ csrf_token() }}'}</script>

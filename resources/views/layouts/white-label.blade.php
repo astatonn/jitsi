@@ -4,10 +4,10 @@
     display: none !important;
 }
 button.button.is-link, #nav-icon1 span{
-    background: #6549ec !important;
+    background: #243413 !important;
 }
 button.button.is-info, button.button.is-success{
-    background: #ff6b18 !important;
+    background: #4b4e10 !important;
 } 
 .show-whitelabel {
     display: contents !important;
@@ -19,6 +19,6 @@ button.button.is-info, button.button.is-success{
 }
 
 .meet-white-label{
-    color:  #ff6b18 !important;
+    color:  #4b4e10 !important;
 }
 </style>

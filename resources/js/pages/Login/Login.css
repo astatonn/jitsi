@@ -1,8 +1,26 @@
-.bg-penso {
-    position: absolute;
-    z-index: -1;
-    top: 100px;
+.login-form-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.main-left {
+    width: 60vw;
+    height: 100vh;
+}
+
+.main-right {
+    width: 40vw;
+    height: 100vh;
+    background-color: #16161f;
+    background-image: url('../../../../public/assets/images/background.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
 
 .container-all {
     display: flex;
@@ -10,10 +28,18 @@
     width: 100%;
     gap: 5rem;
     padding: 0 4%;
-    margin-top: 86px;
-    height: calc(100vh - 86px);
+    height: auto;
     align-items: center;
+    justify-content: center;
 }
+/**************** OLD CLASSES ******/
+.bg-penso {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+}
+
+
 
 .container-all_left {
     width: 50%;

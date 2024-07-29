@@ -7,7 +7,7 @@ export default function InputComponent({ label, type, placeholder, id, icon, hav
         <div className="field">
             <label className="label">{label}</label>
             <div className="control has-icons-left has-icons-right">
-                <input className="input" id={id} type={type} placeholder={placeholder} autoComplete="on" />
+                <input className="input input-border-bottom"  id={id} type={type} placeholder={placeholder} autoComplete="on" />
                 <span className="icon is-small is-left">
                     <i className={"fas " + icon} ></i>
                 </span>
