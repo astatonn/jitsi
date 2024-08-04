@@ -1,3 +1,23 @@
+.button-color-primary {
+    background-color: #243413 !important;
+}
+
+.button-color-secondary {
+    background-color: #4b4e10 !important;
+}
+
+.create-room-header {
+    height: 20% !important;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+}
+
 .clock-react {
     font-size: 24px;
     font-weight: 600;
@@ -13,17 +33,29 @@
 
 .create-room {
     display: flex;
-    margin-top: 120px;
     width: 100%;
     padding: 0 5%;
     gap: 2rem;
-    height: calc(100vh - 120px - 3rem);
+    height: 70%;
+    justify-content: center;
+}
+
+.create-room-right-logo {
+    height: 60%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1500ms, transform 1500ms;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .create-room_left {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     padding: 1.5rem;
     justify-content: center; 
     min-height: fit-content;
@@ -31,10 +63,11 @@
 
 .create-room_right {
     padding: 1rem;
-    width: 50%;
+    width: 40%;
     border-radius: 20px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .h1 {

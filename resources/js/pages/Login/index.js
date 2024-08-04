@@ -8,6 +8,7 @@ import bgEBMail from '../../../../public/assets/images/background.jpg'
 import Form from '../../components/Form'
 import AnimatedPage from "../../components/AnimatedPage/AnimatedPage"
 import { store } from "../../store/store"
+import citexLogo from "../../../../public/assets/images/citex.png"
 
 export default function Login() {
   
@@ -37,6 +38,9 @@ export default function Login() {
           </div>
         </div></div>
         <div className="main-right">
+            <div className="right-container-logo">
+              <img src={citexLogo} className='right-logo'></img>
+            </div>
             <Carroussel />
         </div>
        

@@ -19,6 +19,7 @@ class RoomController extends Controller
 
         }
 
+        
         $exists = Room::roomExists($roomId);
         if(!$exists){
             if(!auth()->check()){

@@ -1,5 +1,4 @@
 .header {
-    padding: 2rem 1rem;
   z-index: 10;
   background-color: #fff;
   display: flex;
@@ -21,5 +20,9 @@
     .header-img {
         margin: auto;
         display: block;
+    }
+
+    .clock-react {
+        font-size: 1.25rem !important;
     }
 }

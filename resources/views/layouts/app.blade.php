@@ -22,7 +22,7 @@
 
     @if(\App\Domain::checkWhiteLabelUrl())
     @include('layouts.white-label') 
-    <link rel="icon" href="{{ asset('assets/images/icon_white_label.png') }}">
+    <link rel="icon" href="{{ asset('assets/images/citex.png') }}">
 
       <script> 
             const whiteLabel = true; 
@@ -33,7 +33,7 @@
   const whiteLabel = false; 
 </script>
 
-<link rel="icon" href="{{ asset('assets/images/meet_call_icon.png') }}">
+<link rel="icon" href="{{ asset('assets/images/citex.png') }}">
 @endif
  
   </head>

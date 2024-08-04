@@ -10,6 +10,7 @@ import { FiVideo } from "react-icons/fi"
 import TableCall from '../../components/TableCall'
 import callVoid from "../../../../public/assets/images/call_void.png"
 import callVoidWhiteLabel from "../../../../public/assets/images/call_void_whitelabel.png"
+import citexLogo from "../../../../public/assets/images/citex.png"
 
 import InputComponent from '../../components/InputComponent'
 import { captureData } from '../../helpersfunctions/helpersFunctions'
@@ -23,6 +24,7 @@ export default function CreateRoom() {
     const [showButtons, setShowButtons] = useState(false)
     const [modal, setModal] = useState(false)
     const [isWhiteLabel, setIsWhiteLabel] = useState(false)
+    const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
 
@@ -202,21 +204,15 @@ export default function CreateRoom() {
         }
     }
 
+    useEffect(() => {
+        setIsLoaded(true);
+    }, []);
 
     return (
         <AnimatedPage>
             <ToastContainer />
             {showRoute && <>
                 <>
-
-                    <Clock
-                        format={' HH:mm:ss A, DD/MM/YY'}
-                        ticking={true}
-                        timezone={'America/Sao_Paulo'}
-                        className="clock-react"
-                    />
-
-
                     <input type="text" id='input-escond' />
                     <div className='hug-icone'>
                         <div id="nav-icone" onClick={(e) => toggleActivy(e)}>
@@ -240,30 +236,32 @@ export default function CreateRoom() {
                         </div>
                     </div>
                 </>
-                <Header />
-                <div className='create-room' onClick={() => removeHambOpen()}>
+                <div className="main-content">
+                    <Header className='create-room-header'/>
+                    <div className='create-room' onClick={() => removeHambOpen()}>
 
 
-                    <div className='create-room_left'>
-                        <h1 className='h1 mb-4'>Olá {store.getState().email == undefined ? '' : store.getState().email}! <br />Seja bem vindo<span className="hidden-whitelabel"> ao <span className='has-text-weight-bold'>Penso</span> <span className='has-text-link'>Meet</span></span>.</h1>
-                        {!showButtons && <button className='button is-link is-large button-call mt-4' onClick={(e) => redirectToApiJitsi(e)}>Nova reunião <FiVideo className="ml-2 mt-1" /></button>}
-                        <h1 className='is-size-3 mt-6'>Entrar em uma reunião</h1>
-                        <div className="field">
-                            <div className="control has-icons-left has-icons-right is-flex">
-                                <input className="input is-medium" type="email" placeholder="Digite o id da reunião" id="input-call" />
-                                <span className="icon is-medium is-left">
-                                    <i className="fas fa-qrcode"></i>
-                                </span>
-                                <button className='button is-success is-medium send-post-button' onClick={(e) => enterCaptureInputCall(e)}>Entrar</button>
+                        <div className='create-room_left'>
+                            <h1 className='h1 mb-4'>Olá {store.getState().email == undefined ? '' : store.getState().email}! <br />Seja bem vindo<span className="hidden-whitelabel"> ao <span className='has-text-weight-bold'>EBMail</span> <span style={{color: '#6a7d00'}}>Meet</span></span>.</h1>
+                            {!showButtons && <button className='button is-link is-large button-call mt-4' onClick={(e) => redirectToApiJitsi(e)}>Nova reunião <FiVideo className="ml-2 mt-1" /></button>}
+                            <h1 className='is-size-3 mt-6'>Entrar em uma reunião</h1>
+                            <div className="field">
+                                <div className="control has-icons-left has-icons-right is-flex">
+                                    <input className="input is-medium input-border-bottom" type="email" placeholder="Digite o id da reunião" id="input-call" />
+                                    <span className="icon is-medium is-left">
+                                        <i className="fas fa-qrcode"></i>
+                                    </span>
+                                    <button className='button is-success is-medium send-post-button button-color-primary' onClick={(e) => enterCaptureInputCall(e)}>Entrar</button>
+                                </div>
+                                <p className="is-size-5 help-height has-text-danger "></p>
                             </div>
-                            <p className="is-size-5 help-height has-text-danger "></p>
-                        </div>
 
-                    </div>
-                    <div className='create-room_right'>
-                        {dataCall.length == 0 ?
-                            <img src={isWhiteLabel ? callVoidWhiteLabel : callVoid} className='img-history-call' />
-                            : <TableCall data={dataCall} />}
+                        </div>
+                        <div className='create-room_right'>
+                            {dataCall.length == 0 ?
+                                <img src={isWhiteLabel ? callVoidWhiteLabel : citexLogo}  className={`img-history-call create-room-right-logo ${isLoaded ? 'fade-in' : ''}`}/>
+                                : <TableCall data={dataCall} />}
+                        </div>
                     </div>
                 </div>
             </>}
@@ -279,7 +277,7 @@ export default function CreateRoom() {
                                     <InputComponent label="Email" type="email" placeholder="Digite seu email" id="email" icon="fa-envelope" have={false} />
                                     <InputComponent label="Senha" type="password" placeholder="Digite sua senha" id="password" icon="fa-lock" have={true} />
                                     <div className='buttons pt-4'>
-                                        <button className='button is-link' onClick={(e) => postFormModal(e)}>Entrar</button>
+                                        <button className='button is-link button-color-primary' onClick={(e) => postFormModal(e)}>Entrar</button>
                                     </div>
                                 </form>
                             </section>

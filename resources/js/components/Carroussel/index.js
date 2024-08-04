@@ -2,27 +2,6 @@ import React, { useEffect, useState } from 'react'
 import "bulma-carousel/src/sass/index.sass";
 import bulmaCarousel from "bulma-carousel/dist/js/bulma-carousel.min.js";
 
-import callPenso from "../../../../public/assets/images/call_penso.png"
-import callPensoWhiteLabel from "../../../../public/assets/images/call_penso_whitelabel.png"
-
-import timePenso from "../../../../public/assets/images/time_penso.png"
-import timePensoWhiteLabel from "../../../../public/assets/images/time_penso_whitelabel.png"
-
-import breakPenso from "../../../../public/assets/images/break_penso.png"
-import breakPensoWhiteLabel from "../../../../public/assets/images/break_penso_whitelabel.png"
-
-import meetPenso from "../../../../public/assets/images/meet_penso.png"
-import meetPensoWhiteLabel from "../../../../public/assets/images/meet_penso_whitelabel.png"
-
-import gravePenso from "../../../../public/assets/images/grave_penso.png"
-import gravePensoWhiteLabel from "../../../../public/assets/images/grave_penso_whitelabel.png"
-
-import safePenso from "../../../../public/assets/images/safe_penso.png"
-import safePensoWhiteLabel from "../../../../public/assets/images/safe_penso_whitelabel.png"
-
-import videoPenso from "../../../../public/assets/images/video_penso.png"
-import videoPensoWhiteLabel from "../../../../public/assets/images/video_penso_whitelabel.png"
-
 
 import "./Carroussel.css"
 
