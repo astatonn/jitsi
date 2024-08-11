@@ -1,9 +1,18 @@
+.button-color-primary {
+    background-color: #243413 !important;
+}
+
+.button-color-secondary {
+    background-color: #4b4e10 !important;
+}
+
 .hug-notcreate-room {
     display: flex;
-    margin-top: 140px;
-    height: calc(100vh - 140px);
     width: 100%;
     gap: 3rem;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
 }
 
 .notcreate-conteudo {

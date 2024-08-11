@@ -243,7 +243,7 @@ export default function CreateRoom() {
 
                         <div className='create-room_left'>
                             <h1 className='h1 mb-4'>Olá {store.getState().email == undefined ? '' : store.getState().email}! <br />Seja bem vindo<span className="hidden-whitelabel"> ao <span className='has-text-weight-bold'>EBMail</span> <span style={{color: '#6a7d00'}}>Meet</span></span>.</h1>
-                            {!showButtons && <button className='button is-link is-large button-call mt-4' onClick={(e) => redirectToApiJitsi(e)}>Nova reunião <FiVideo className="ml-2 mt-1" /></button>}
+                            {!showButtons && <button className='button is-link button-color-primary is-large button-call mt-4' onClick={(e) => redirectToApiJitsi(e)}>Nova reunião <FiVideo className="ml-2 mt-1" /></button>}
                             <h1 className='is-size-3 mt-6'>Entrar em uma reunião</h1>
                             <div className="field">
                                 <div className="control has-icons-left has-icons-right is-flex">

@@ -33,8 +33,8 @@ export default function NotFound() {
       <Header />
       <div className="notfound-page">
         <div className='has-text-centered p-4 is-size-1'>Página não encontrada | 404 </div>
-        {showButton && <button className='button is-link is-large button-center ' onClick={() => linkInitial()}>Pagina Inicial</button>}
-        {!showButton && <button className='button is-success is-large button-center' onClick={() => linkToLogin()}>Login</button>}
+        {showButton && <button className='button is-link is-large button-center button-color-primary' onClick={() => linkInitial()}>Pagina Inicial</button>}
+        {!showButton && <button className='button is-success is-large button-center button-color-primary' onClick={() => linkToLogin()}>Login</button>}
       </div>
     </AnimatedPage>
   )

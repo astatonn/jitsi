@@ -7,7 +7,7 @@ import InputComponent from '../../components/InputComponent'
 import { captureData } from '../../helpersfunctions/helpersFunctions'
 import { ToastContainer, toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom'
-import callCreate from "../../../../public/assets/images/call_create.png"
+import citexLogo from "../../../../public/assets/images/citex.png"
 
 export default function NotCreateRoom() {
 
@@ -168,12 +168,13 @@ export default function NotCreateRoom() {
           </div>
 
           <div className='buttons buttons-div'>
-            <button className='button is-large is-info button-width-try' onClick={() => postVerifyRoute()}>Tente novamente</button>
+            <button className='button is-large button-color-primary is-info button-width-try' onClick={() => postVerifyRoute()}>Tente novamente</button>
          
           </div>
         </div>
         <div className='notcreate-conteudo-right'>
-          <img src={callCreate} alt="Criar reunião" className='img-call-create' />
+          <img src={citexLogo} className='img-call-create'></img>
+       
         </div>
       </div>
 
@@ -189,7 +190,7 @@ export default function NotCreateRoom() {
                   <InputComponent label="Email" type="email" placeholder="Digite seu email" id="email" icon="fa-envelope" have={false} />
                   <InputComponent label="Senha" type="password" placeholder="Digite sua senha" id="password" icon="fa-lock" have={true} />
                   <div className='buttons pt-4'>
-                    <button className='button is-link' onClick={(e) => postFormModal(e)}>Entrar</button>
+                    <button className='button is-link button-color-primary' onClick={(e) => postFormModal(e)}>Entrar</button>
                   </div>
                 </form>
               </section>

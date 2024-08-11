@@ -9,3 +9,11 @@
 .button-center {    
     width: 300px;
 }
+
+.button-color-primary {
+    background-color: #243413 !important;
+}
+
+.button-color-secondary {
+    background-color: #4b4e10 !important;
+}
